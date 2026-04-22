@@ -4,17 +4,17 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                sh 'python3 f1.py'
+                bat 'python f1.py'
             }
         }
         stage('Test') {
             steps {
-                sh 'python3 f2.py'
+                bat 'python f2.py'
             }
         }
         stage('Deploy') {
             steps {
-                sh 'python3 f3.py'
+                bat 'python f3.py'
             }
         }
     }
